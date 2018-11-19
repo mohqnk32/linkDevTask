@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:background="#f8f8f7"
+    android:minHeight="88dp"
+    android:paddingBottom="20dp"
+    android:layout_marginTop="15dp">
+
+    <ImageView
+        android:id="@+id/list_item_icon"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:src="@drawable/profile" />
+
+
+    <RelativeLayout
+        android:id="@+id/text_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="88dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/list_item_icon"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp">
+
+        <TextView
+            android:id="@+id/miwok_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:text="Welcome "
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#9c9c9c" />
+
+        <TextView
+            android:id="@+id/default_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/miwok_text_view"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:text="Tony Roshdy"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#090909" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/arrow" />
+
+</RelativeLayout>
